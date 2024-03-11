@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  
+  "devDependencies": {
+    "serve": "^11.2.0"
+  },
+  "main": "index.html",
+  "name": "swiper-css-mode",
+  "scripts": {
+    "build": "echo This is a static template, there is no bundler or bundling involved!",
+    "start": "serve"
+  },
+  "tags": [
+    "swiper"
+  ]
+}

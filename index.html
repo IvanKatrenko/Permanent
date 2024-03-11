@@ -7,8 +7,11 @@
     <link rel="icon" href="#" type="svg/svg+xml">
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Vladyslava Iliushchenko - Master Permanent</title>
+
+    
 
 </head>
 
@@ -16,11 +19,14 @@
 
     <header class="header">
         <div class="container header__container">
+
+            <a href="#" class="header__logo"></a>
+
             <button class="burger burger__active header__burger">
                 <span class="burger__line"></span>
             </button>
         
-            <nav class="header__navigation navigation">
+            <nav class="header__navigation">
                 <ul class="navigation__list">
                     <li class="naviagtion__item">
                         <a href="#one" class="navigation__link"> Chciałabym opowiedzieć o sobie.</a>
@@ -51,15 +57,12 @@
                         <h1 class="hero__title">Vladyslava Iliushchenko</h1>
                         <p class="hero__description">
                             Nazywam się Vladyslava Iliushchenko i od ponad 7 lat poświęcam się sztuce makijażu permanentnego. Mój zawód nie tylko wynika z fachowej wiedzy i doświadczenia, lecz przede wszystkim z autentycznej pasji do branży beauty, której oddawałam się już znacznie wcześniej.
-                            
                             Dla mnie makijaż permanentny to nie tylko praca, to forma sztuki, której jestem oddana z całego serca. Moje umiejętności i zaangażowanie rozwijają się każdego dnia, co sprawia, że moja praca jest nieustannie fascynująca.
-                            
                             Duma z tego, co robię, nieustannie napawa mnie spełnieniem zawodowym. Wiedza, którą zdobyłam i umiejętności, które rozwijałam na przestrzeni lat, pozwalają mi nie tylko kreować piękno, ale także wpływać pozytywnie na życie moich klientów. To głębokie poczucie spełnienia zawodowego nie tylko dodaje energii mojej pracy, ale również wpływa korzystnie na inne aspekty mojego życia.
-                            
-                            Jestem zaszczuta możliwością dzielenia się moją pasją i talentem z innymi, a każdy klient, którego obsługuję, stanowi dla mnie niepowtarzalne wyzwanie do stworzenia sztuki, która podkreśli ich naturalne piękno. Moje życie to nie tylko praca zawodowa, to podróż w świat piękna, gdzie każdy dzień przynosi nowe inspiracje i satysfakcje z osiągniętych rezultatów.</p>
+                            Jestem zaszczuta możliwością dzielenia się moją pasją i talentem z innymi, a każdy klient, którego obsługuję, stanowi dla mnie niepowtarzalne wyzwanie do stworzenia sztuki, która podkreśli ich naturalne piękno. Moje życie to nie tylko praca zawodowa, to podróż w świat piękna, gdzie każdy dzień przynosi nowe inspiracje i satysfakcje z osiągniętych rezultatów.
+                        </p>
                 
                             <img class="hero__img" src="#" alt="" width="" height="">
-                            <span></span>
                     
                     </div>
                 </div>
@@ -74,19 +77,19 @@
                                     src="img/blush.png"
                                     class="features__img"
                                     alt="">
-                            <div class="features__item-text">Trwałość</div>
+                            <p class="features__item-text">Trwałość</p>
                             </div>
                             <div class="features__lists">
                                 <img src="img/save-time.png" class="features__img" alt="">
-                            <div class="features__item-text">Oszczędność czasu</div>
+                            <p class="features__item-text">Oszczędność czasu</p>
                             </div>
                             <div class="features__lists">
                                 <img src="img/makeup.png" class="features__img" alt="">
-                            <div class="features__item-text">Poprawa naturalnego wyglądu</div>
+                            <p class="features__item-text">Poprawa naturalnego wyglądu</p>
                             </div>
                             <div class="features__lists">
                                 <img src="img/cloudy.png" class="features__img" alt="">
-                            <div class="features__item-text">Odporność na warunki atmosferyczne</div>
+                            <p class="features__item-text">Odporność na warunki atmosferyczne</p>
                             </div>
                         </ul>
                 </div>
@@ -165,55 +168,87 @@
 
             <section class="feedback" id="three">
                 <div class="container feedback__container">
-                    <h2 class="feedback__title">Jakie wrażenia mają klientki po współpracy ze mną?</h2>
-                    <div class="all">
-                        <input checked type="radio" name="respond" id="desktop">
-                            <article id="slider">
-                                    <input checked type="radio" name="slider" id="switch1">
-                                    <input type="radio" name="slider" id="switch2">
-                                    <input type="radio" name="slider" id="switch3">
-                                    <input type="radio" name="slider" id="switch4">
-                                    <input type="radio" name="slider" id="switch5">
-                                <div id="slides">
-                                    <div id="overflow">
-                                        <div class="image">
-                                            <article><img src="img/1.png"></article>
-                                            <a href="https://g.co/kgs/R2nJouG"></a>
-                                            <article><img src="https://g.co/kgs/tXGMegH"></article>
-                                            <article><img src="https://g.co/kgs/c3X66wN"></article>
-                                            <article><img src="https://g.co/kgs/ZWRZB95"></article>
-                                            <article><img src="https://g.co/kgs/XQDm4DS"></article>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="controls">
-                                    <label for="switch1"></label>
-                                    <label for="switch2"></label>
-                                    <label for="switch3"></label>
-                                    <label for="switch4"></label>
-                                    <label for="switch5"></label>
-                                </div>
-                                <div id="active">
-                                    <label for="switch1"></label>
-                                    <label for="switch2"></label>
-                                    <label for="switch3"></label>
-                                    <label for="switch4"></label>
-                                    <label for="switch5"></label>
-                                </div>
-                            </article>
-                    </div>
+                    <h2
+                     class="feedback__title">Jakie wrażenia mają klientki po współpracy ze mną?
+                    </h2>
+                    
+                <swiper-container
+                       class="myswiper" 
+                       navigation="true" 
+                       pagination="true" 
+                       keyboard="true" 
+                       mousewheel="true"
+                      css-mode="true" 
+                      autoplay="true" >
+                    <swiper-slide>
+                        <div class="swiper__title">
+                            <p class="swiper__text"> "Bardzo profesjonalne podejście do klienta, na początku wizyty omawiane są wszystkie szczegóły dot. zabiegu (robiłam permanent ust). Praca została wykonana bardzo starannie co dało niesamowity efekt, bardzo polecam ❤️ zdjęcie zrobione trzeciego dnia po zabiegu 🔥"</p>
+                        <a class="swiper__link" href="https://maps.app.goo.gl/HwvwDLsu4ohfyiP96">Alina Poltorak</a>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="swiper__title">
+                        <p class="swiper__text">"Polecam z całego serca. 🥰 Jestem bardzo zadowolona ! Makijaż permanentny jest bardzo delikatny a mimo to zmiana jest ogromna. Nazywam ten efekt „efektem różowej pomadki Nivea”.
+                        Usługa bardzo profesjonalnie wykonana, rzetelne doradztwo i dobór koloru a co najważniejsze ogromna cierpliwość do niezdecydowanej klientki 🤣"</p>
+                    <a class="swiper__link" href="https://maps.app.goo.gl/F2N5npSWJfqtMaz67">Milena Piotrowska</a>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="swiper__title">
+                            <p class="swiper__text">"Serdecznie polecam usługi Pani Vladyslava. Zabieg wykonany na najwyższym poziomie, duże doświadczenie i super podejście do klienta! Napewno wrócę w przyszłości. Polecam"</p>
+                        <a class="swiper__link" href="https://maps.app.goo.gl/jEfkiXqSWkrmdRxh9">Katarzyna Kapica</a>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="swiper__title">
+                            <p class="swiper__text">"Dziękuję bardzo, za niesamowity makijaż permanentny! Jestem zachwycona wynikiem - to naprawdę dzieło mistrza! Po raz pierwszy czuję się pewnie i pięknie bez codziennego malowania. Polecam każdemu, kto poszukuje profesjonalisty w tej dziedzinie. Pani Vladyslava jest super, gorąco polecam!"</p>
+                        <a class="swiper__link" href="https://maps.app.goo.gl/1b8rAkhd6j31NxLV7">Kateryna Borodai</a>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="swiper__title">
+                            <p class="swiper__text">"Miło, komfortowo i profesjonalnie. Naprawdę polecam z całego serca ❤️ Jestem zachwycona zrobionymi brwiami, są piękne i dokładnie takie jakie chciałam, delikatne ale idelanie podkreślone. Napewno wrócę na poprawki, dziękuję ☺️"</p>
+                        <a class="swiper__link" href="https://maps.app.goo.gl/beAyz8WzjfXPVxqd8">Karolina Bargieł</a>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="swiper__title">
+                            <p class="swiper__text">"Zdecydowałam się na makijaż brwi u Vlady. Zabieg wykonany starannie, wszystkie moje pytania i wątpliwości rozwiane. Cieszę, że sie zdecydowałam, bo makijaż permanentny brwi to duża oszczędność czasu na codzień"</p>
+                        <a class="swiper__link" href="https://maps.app.goo.gl/hGzAgGp6qcjq3cGL6">Karolina Szczypek</a>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="swiper__title">
+                            <p class="swiper__text">"Добрый день!!! Хочу поблагодарить Владиславу за хорошую, профессиональную работу. Она мастер своего дела.Просто умничка. Рекомендую всем, бровки получились супер,🥰 …"</p>
+                        <a class="swiper__link" href="https://maps.app.goo.gl/qCeFjHWsH1XtisD5A">Tatyana Fursova</a>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="swiper__title">
+                            <p class="swiper__text">"Podejście Pani Vlady do klienta bardzo profesjonalne! Atmosfera nie mogłaby być lepsza ☺️ Polecam każdemu kto chce mieć pięknie wykonane brwi! ❤️"</p>
+                        <a class="swiper__link" href="https://maps.app.goo.gl/DAF5bfrGUrKBveuB9">Ola Ciach</a>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="swiper__title">
+                            <p class="swiper__text">"Profesjonalne podejście, duża wiedza i jakość. Można mieć pełne zaufanie. Pięknie wykonane brwi. Polecam! 🙂🙂🙂 …"</p>
+                        <a class="swiper__link" href="https://maps.app.goo.gl/enEQAPjD6yXcx5JUA">Karolina Włocka</a>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+
                     <div class="marque-text">
                         <div>
                             <h1>Makijaż permanentny ust, Makijaz permanentny brwi, Usuwanie makijażu permanentnego Removerem, Vladyslava Iliushchenko, Henna, Regulacja. </h1>
-                            <h1> Makijaż permanentny ust, Makijaz permanentny brwi, Usuwanie makijażu permanentnego Removerem, Vladyslava Iliushchenko, Henna, Regulacja</h1>
                         </div>
+
                     </div>
                 </div>
             </section>
         </main>
 
         <div class="maps">
-            <h1 class="maps__title">Google Maps</h1>
+            <h1 class="maps__title">Znajdziesz mnie pod tym adresem...</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9768.703858764207!2d20.951235687158196!3d52.2583496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecbcbec7282a3%3A0x82cf97bf6cf13145!2sMissis%20Permanent!5e0!3m2!1sru!2spl!4v1710109286925!5m2!1sru!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
    
@@ -225,18 +260,18 @@
                 <div class="footer__info">
                     <h3 class="footer__title">Usługi</h3>
                     
-                        <a href="#">Makijaż permanentny ust</a><br>
-                        <a href="#">Makijaż permanentny brwi</a><br>
-                        <a href="#">Usuwanie makijażu permanentnego Removerem</a>
+                        <a class="footer__link" href="#">Makijaż permanentny ust</a><br>
+                        <a class="footer__link" href="#">Makijaż permanentny brwi</a><br>
+                        <a class="footer__link" href="#">Usuwanie makijażu permanentnego Removerem</a>
                     
                 </div>
     
                 <div class="footer__rules">
                     <h3 class="footer__title">Regulaminy</h3>
                     
-                        <a href="#">Regulamin</a><br>
-                        <a href="#">Polityka prywatności</a><br>
-                        <a href="#">Przeciwskazania</a>
+                        <a class="footer__link" href="#">Regulamin</a><br>
+                        <a class="footer__link" href="#">Polityka prywatności</a><br>
+                        <a class="footer__link" href="#">Przeciwskazania</a>
                     
                 </div>
 
@@ -255,20 +290,20 @@
                         </a>
                     </li>
                     <li class="footer__item-social">
-                        <a href="#" class="footer__link footer__link-social">
+                        <a href="https://www.instagram.com/missis_permanent/" class="footer__link footer__link-social">
                             <svg viewBox=" 0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
                                 <path fill="currentColor" d="M13 2c-2.985 0-3.36.014-4.533.066-1.173.055-1.972.24-2.672.512-.734.276-1.4.709-1.948 1.269a5.4 5.4 0 0 0-1.27 1.948c-.272.699-.457 1.499-.511 2.668C2.014 9.638 2 10.013 2 13c0 2.987.014 3.36.066 4.534.055 1.171.24 1.97.512 2.67a5.403 5.403 0 0 0 1.269 1.948c.61.612 1.223.989 1.947 1.27.7.272 1.498.457 2.67.511C9.638 23.986 10.012 24 13 24c2.988 0 3.36-.014 4.535-.066 1.17-.055 1.971-.24 2.671-.512a5.386 5.386 0 0 0 1.947-1.269 5.404 5.404 0 0 0 1.27-1.948c.27-.7.456-1.499.511-2.67.052-1.173.066-1.547.066-4.535 0-2.988-.014-3.362-.066-4.536-.055-1.17-.24-1.97-.512-2.669a5.4 5.4 0 0 0-1.269-1.948 5.379 5.379 0 0 0-1.948-1.27c-.701-.272-1.502-.457-2.672-.511C16.36 2.014 15.986 2 12.997 2h.004H13Zm-.986 1.983h.987c2.937 0 3.285.01 4.444.063 1.073.048 1.656.228 2.044.378.512.2.88.439 1.265.824a3.4 3.4 0 0 1 .822 1.265c.151.386.33.97.378 2.042.054 1.159.065 1.507.065 4.442 0 2.936-.011 3.285-.065 4.444-.048 1.073-.228 1.654-.378 2.042-.177.478-.458.91-.824 1.264-.385.385-.75.623-1.265.822-.385.151-.968.33-2.042.38-1.159.052-1.507.064-4.444.064-2.937 0-3.286-.012-4.445-.065-1.072-.049-1.654-.228-2.042-.379a3.407 3.407 0 0 1-1.265-.822 3.41 3.41 0 0 1-.825-1.265c-.15-.387-.33-.97-.378-2.042-.052-1.16-.063-1.507-.063-4.446 0-2.937.01-3.283.063-4.442.05-1.073.228-1.656.38-2.043.199-.513.438-.88.823-1.265.385-.385.75-.623 1.265-.823.388-.15.97-.33 2.042-.38 1.015-.046 1.408-.06 3.458-.061v.003Zm6.859 1.826a1.32 1.32 0 1 0 0 2.64 1.32 1.32 0 0 0 0-2.64ZM13 7.35a5.65 5.65 0 1 0-.176 11.3 5.65 5.65 0 0 0 .176-11.3Zm0 1.982a3.667 3.667 0 1 1 0 7.333 3.667 3.667 0 0 1 0-7.333Z" fill="currentColor"</svg>
                         </a>
                     </li>
                     <li class="footer__item-social">
-                        <a href="#" class="footer__link footer__link-social">
+                        <a href="https://www.facebook.com/missis.permanent/" class="footer__link footer__link-social">
                             <svg viewBox=" 0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
                                 <path fill="currentColor" d="M24.375 12.929c0-.056 0-.12-.003-.193-.002-.206-.007-.437-.012-.683a38.176 38.176 0 0 0-.112-2.08c-.076-.916-.188-1.68-.34-2.254a3.543 3.543 0 0 0-2.496-2.501c-.719-.193-2.125-.313-4.106-.386-.942-.036-1.95-.059-2.958-.071-.353-.005-.68-.008-.975-.01h-.746c-.295.002-.622.005-.975.01-1.008.012-2.016.035-2.958.07-1.98.077-3.39.196-4.106.387a3.538 3.538 0 0 0-2.496 2.5c-.155.575-.264 1.339-.34 2.255a38.238 38.238 0 0 0-.112 2.08c-.007.246-.01.477-.012.683 0 .074-.003.137-.003.193v.142c0 .056 0 .12.003.193.002.206.007.437.012.683.02.709.056 1.414.112 2.08.076.916.188 1.68.34 2.254a3.538 3.538 0 0 0 2.496 2.501c.716.193 2.125.313 4.106.386.942.036 1.95.059 2.958.071.353.005.68.008.975.01h.746c.295-.002.622-.005.975-.01 1.008-.012 2.016-.035 2.958-.07 1.98-.077 3.39-.196 4.106-.387a3.534 3.534 0 0 0 2.496-2.5c.155-.575.264-1.339.34-2.255.056-.666.091-1.372.112-2.08.007-.246.01-.477.012-.683 0-.073.003-.137.003-.193v-.142Zm-1.828.132c0 .053 0 .112-.003.18-.002.198-.007.417-.012.653a34.28 34.28 0 0 1-.107 1.978c-.069.817-.165 1.488-.284 1.937a1.708 1.708 0 0 1-1.204 1.206c-.533.142-1.876.256-3.702.325a115.609 115.609 0 0 1-3.872.079h-.726l-.96-.008c-.993-.013-1.985-.035-2.912-.07-1.826-.072-3.171-.184-3.702-.326a1.713 1.713 0 0 1-1.204-1.206c-.119-.45-.215-1.12-.284-1.937a36.77 36.77 0 0 1-.107-1.978c-.007-.236-.01-.457-.012-.653 0-.068-.003-.13-.003-.18v-.122c0-.053 0-.112.003-.18.002-.198.007-.417.012-.653.018-.675.054-1.35.107-1.978.069-.817.165-1.488.284-1.937a1.708 1.708 0 0 1 1.204-1.206c.533-.142 1.876-.256 3.702-.325a115.315 115.315 0 0 1 3.872-.079h.726l.96.008c.993.013 1.985.035 2.912.071 1.826.071 3.171.183 3.702.325.584.157 1.046.62 1.204 1.206.119.45.215 1.12.284 1.937.053.627.086 1.303.107 1.978.007.236.01.457.012.653 0 .068.003.13.003.18v.122ZM10.74 16.402l5.89-3.427-5.89-3.377v6.804Z"fill="currentColor"/>
                             </svg>
                         </a>
                     </li>
                     <li class="footer__item-social">
-                        <a href="#" class="footer__link footer__link-social">
+                        <a href="@Missis_Permanent" class="footer__link footer__link-social">
                             <svg viewBox=" 0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
                                 <path fill="currentColor" d="M21.182 3.247c-.261.019-.517.08-.758.181h-.003c-.232.092-1.333.555-3.007 1.257L11.416 7.21c-4.303 1.812-8.534 3.596-8.534 3.596l.05-.02s-.291.096-.596.305a1.65 1.65 0 0 0-.476.461c-.15.22-.27.555-.225.902.073.586.453.938.726 1.133.276.196.54.288.54.288h.006l3.968 1.337c.177.57 1.209 3.96 1.456 4.741.147.467.289.758.467.98.086.115.187.21.308.286a.91.91 0 0 0 .2.086l-.041-.01c.012.004.022.014.03.017.033.009.055.012.097.018.628.19 1.132-.2 1.132-.2l.029-.022 2.342-2.133 3.926 3.012.09.038c.818.36 1.646.16 2.084-.193.442-.355.613-.81.613-.81l.028-.073L22.67 5.408c.086-.383.108-.743.013-1.091a1.468 1.468 0 0 0-.634-.85 1.521 1.521 0 0 0-.867-.22ZM21.1 4.912c-.004.052.006.046-.017.144v.01l-3.005 15.38c-.013.022-.035.07-.095.118-.063.05-.114.082-.378-.023l-4.802-3.682-2.9 2.644.61-3.892L18.357 8.3c.323-.3.215-.364.215-.364.023-.369-.488-.108-.488-.108l-9.893 6.129-.004-.017-4.741-1.596v-.004l-.013-.002a.215.215 0 0 0 .025-.01l.026-.013.025-.009 8.538-3.596c2.154-.907 4.325-1.821 5.995-2.527 1.67-.7 2.904-1.215 2.974-1.243.067-.026.035-.026.083-.026Z"fill="currentColor"/>
                             </svg>
@@ -284,5 +319,8 @@
         </div>
 
     </footer>
+    <script src="js/burger.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 </html>
