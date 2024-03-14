@@ -4,54 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="#" type="svg/svg+xml">
-
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="img/logo.png" type="svg/svg+xml">
 
     <title>Vladyslava Iliushchenko - Master Permanent</title>
 
-    
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 
 <body>
 
     <header class="header">
-        <div class="container header__container">
+        <div class=" container header__container">
 
-            <a href="#" class="header__logo"></a>
-
-            <button class="burger burger__active header__burger">
-                <span class="burger__line"></span>
+            <button class="header__burger-btn" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
+
+            <a href="#" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="Logo">
+            </a>
         
-            <nav class="header__navigation">
+            <nav class="navigation">
                 <ul class="navigation__list">
-                    <li class="naviagtion__item">
+                    <li class="navigation__item">
                         <a href="#one" class="navigation__link"> Chciałabym opowiedzieć o sobie.</a>
                     </li>
         
-                    <li class="naviagtion__item">
+                    <li class="navigation__item">
                         <a href="#two" class="navigation__link">Dlaczego decydujemy się na makijaż permanentny?</a>
                     </li>
         
-                    <li class="naviagtion__item">
+                    <li class="navigation__item">
                         <a href="#three" class="navigation__link">Jakie wrażenia mają klientki po współpracy ze mną?</a>
                     </li>
         
-                    <li class="naviagtion__item">
+                    <li class="navigation__item">
                         <a href="#pay" class="navigation__link">Jakie są dostępne formy opłat?</a>
                     </li>
                 </ul>
             </nav>
-            <button class="header__consultation">Masz pytanie? Skontaktuj</button>
+            <button class="header__consultation" id="header__consultation">Masz pytanie? Skontaktuj</button>
         </div>
-
     </header>
     
         <main>
-            <section class="hero">
+            <section class="hero" id="one">
                 <div class="container hero__container">
                     <div class="hero__content">
                         <h1 class="hero__title">Vladyslava Iliushchenko</h1>
@@ -61,8 +63,6 @@
                             Duma z tego, co robię, nieustannie napawa mnie spełnieniem zawodowym. Wiedza, którą zdobyłam i umiejętności, które rozwijałam na przestrzeni lat, pozwalają mi nie tylko kreować piękno, ale także wpływać pozytywnie na życie moich klientów. To głębokie poczucie spełnienia zawodowego nie tylko dodaje energii mojej pracy, ale również wpływa korzystnie na inne aspekty mojego życia.
                             Jestem zaszczuta możliwością dzielenia się moją pasją i talentem z innymi, a każdy klient, którego obsługuję, stanowi dla mnie niepowtarzalne wyzwanie do stworzenia sztuki, która podkreśli ich naturalne piękno. Moje życie to nie tylko praca zawodowa, to podróż w świat piękna, gdzie każdy dzień przynosi nowe inspiracje i satysfakcje z osiągniętych rezultatów.
                         </p>
-                
-                            <img class="hero__img" src="#" alt="" width="" height="">
                     
                     </div>
                 </div>
@@ -70,7 +70,7 @@
 
             <section class="features">
                 <div class="container features__container">
-                    <h2 class="visually-hidden">Dobre Aspekty</h2>
+                    <h2 class="visually-hidden">Głowne zalety</h2>
                         <ul class="features__list">
                             <div class="features__lists">
                                 <img
@@ -89,7 +89,7 @@
                             </div>
                             <div class="features__lists">
                                 <img src="img/cloudy.png" class="features__img" alt="">
-                            <p class="features__item-text">Odporność na warunki atmosferyczne</p>
+                            <p class="features__item-text">Odporność</p>
                             </div>
                         </ul>
                 </div>
@@ -139,7 +139,7 @@
                             <a  class="product__button product__button-more" href="#">Więcęj</a>
                         </div>
                     </div>
-                    <img class="product__picture" src="img/img2.jpeg" width="630" height="590" alt="">    
+                    <img class="product__picture" src="img/brwi.jpeg" width="630" height="590" alt="">    
                 </div>
             </section>
 
@@ -249,13 +249,13 @@
 
         <div class="maps">
             <h1 class="maps__title">Znajdziesz mnie pod tym adresem...</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9768.703858764207!2d20.951235687158196!3d52.2583496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecbcbec7282a3%3A0x82cf97bf6cf13145!2sMissis%20Permanent!5e0!3m2!1sru!2spl!4v1710109286925!5m2!1sru!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="maps__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9768.703858764207!2d20.951235687158196!3d52.2583496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecbcbec7282a3%3A0x82cf97bf6cf13145!2sMissis%20Permanent!5e0!3m2!1sru!2spl!4v1710109286925!5m2!1sru!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
    
     <footer class="footer" id="pay">
         <div class="container footer__container">
 
-            <!-- LOGO -->
+            <img src="img/logo.png" alt="">
 
                 <div class="footer__info">
                     <h3 class="footer__title">Usługi</h3>

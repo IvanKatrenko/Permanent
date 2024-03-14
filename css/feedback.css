@@ -1,0 +1,32 @@
+.feedback {
+  background-color: rgb(240, 88, 237);
+}
+.feedback__container {
+  max-width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.feedback__title {
+  font-size: 38px;
+  font-style: oblique;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.72px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media (max-width: 1100px) {
+  .feedback__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 760px) {
+}
+
+@media (max-width: 580px) {
+}

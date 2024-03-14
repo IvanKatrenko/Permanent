@@ -1,0 +1,247 @@
+.product {
+  background-color: #f670f6;
+  padding: 80px 0;
+  color: black;
+}
+.product__container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.product__content {
+  padding-top: 56px;
+  max-width: 500px;
+}
+.product:nth-child(even) .product__container {
+  flex-direction: row-reverse;
+}
+.product:nth-child(even) .product__content {
+  text-align: space-evenly;
+}
+
+.product__title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 0.7px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.product__features {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  font-style: italic;
+  letter-spacing: 0.72px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.product__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.72px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.product__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 70px;
+}
+.product__button {
+  display: block;
+  padding: 14px 36px;
+  align-items: center;
+  gap: 36px;
+  border: 2px solid transparent;
+}
+.product__button-order {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.72px;
+  border-radius: 10px;
+  background-color: #53f0c1;
+  color: rgb(7, 7, 7);
+}
+.product__button-more {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.72px;
+  border: 2px solid #070707;
+  border-radius: 10px;
+}
+.product__button:hover {
+  background-color: #f0a0a0;
+  border-color: black;
+  color: black;
+}
+
+.product__button:active {
+  background-color: #92e3f1;
+  border-color: black;
+  color: black;
+}
+.product__button-order:focus {
+  outline-color: #f58585;
+}
+
+.product__button-more:focus {
+  outline-color: #f58585;
+}
+.product__picture {
+  width: calc(40% - 15px);
+  border-radius: 16px;
+  object-fit: cover;
+}
+@media (max-width: 1440px) {
+  .product__content {
+    padding-top: 40px;
+    max-width: 460px;
+  }
+  .product__title {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+
+  .product__features {
+    margin-bottom: 30px;
+    font-style: italic;
+    font-size: 30px;
+  }
+
+  .product__description {
+    font-size: 33px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .product {
+    padding: 60px 0;
+  }
+  .product__content {
+    padding-top: 24px;
+    max-width: 380px;
+  }
+  .product__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .product__features {
+    margin-bottom: 30px;
+    font-style: italic;
+    font-size: 28px;
+  }
+
+  .product__description {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .product__button-wrapper {
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  .product__button {
+    font-size: 16px;
+    padding: 16px 30px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product {
+    padding: 50px 0;
+  }
+  .product__content {
+    padding-top: 24px;
+    max-width: 330px;
+  }
+  .product__title {
+    font-size: 45px;
+  }
+
+  .product__features {
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  .product__description {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .product__button-wrapper {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .product__button {
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 760px) {
+  .product {
+    padding: 20px 0;
+  }
+
+  .product__title {
+    font-size: 35px;
+  }
+
+  .product__features {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  .product__description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .product__button-wrapper {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .product:nth-child(even) .product__container,
+  .product__container {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .product__content {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+  .product__picture {
+    width: 100%;
+  }
+  .product__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .product__features {
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  .product__description {
+    font-size: 14px;
+  }
+  .product__button {
+    font-size: 14px;
+    padding: 5px 14px;
+  }
+}
