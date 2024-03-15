@@ -67,7 +67,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
@@ -86,7 +87,7 @@
   justify-content: center;
   text-align: center;
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
 }
 .navigation__link:hover {
   color: #1d1c1d;
@@ -98,10 +99,12 @@
   display: flex;
   font-family: cursive;
   align-items: center;
+  justify-content: end;
+  text-align: center;
   gap: 5px;
   margin-right: 20px;
   background-color: #ccabdf;
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 5px 10px;
   color: #fbfafa;
   font-size: 20px;
@@ -147,6 +150,10 @@
   }
   .header.open .navigation {
     transform: translateX(100%);
+  }
+  .header__consultation {
+    height: 150px;
+    width: 150px;
   }
 }
 
