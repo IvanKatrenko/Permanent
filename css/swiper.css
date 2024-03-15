@@ -2,12 +2,12 @@
 .swiper-container {
   width: 100%;
   height: 100%;
+  background-color: #ccabdf;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #d634f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,12 +45,14 @@
   display: inline-block;
   font-size: 22px;
   font-style: italic;
-  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
   line-height: 130%;
   letter-spacing: 0.72px;
   margin-bottom: 50px;
   text-align: center;
   color: #0f0e0e;
+  cursor: pointer;
 }
 .swiper__link:hover {
   color: #f9bede;
