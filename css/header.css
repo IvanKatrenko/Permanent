@@ -1,13 +1,32 @@
 .header {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: box-shadow 0.3s ease 0s; /* Add a transition effect */
+  backdrop-filter: blur(8px); /* Add a blur effect */
+  -webkit-backdrop-filter: blur(7px);
 }
 .header__container {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: padding-top 0.3s ease 0s, padding-bottom 0.3s ease 0s;
 }
+
+.header__scrolled {
+  background-color: transparent;
+  box-shadow: 0px 0px 29px -11px rgba(0, 0, 0, 0.75);
+}
+
+.header__scrolled .header__container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .header__burger-btn {
   display: none;
   position: relative;
