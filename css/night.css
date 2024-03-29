@@ -1,0 +1,58 @@
+.night-btn {
+  position: fixed;
+  top: 170px;
+  right: 10px;
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: rgba(57, 166, 239, 0.5);
+  cursor: pointer;
+  transition: filter 0.4s background-color 0.4s;
+}
+
+.night-btn:hover {
+  filter: brightness(120%);
+}
+
+.night-btn:active {
+  filter: brightness(60%);
+}
+
+.night-btn__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.night-btn__icon-moon {
+  opacity: 1;
+}
+
+body {
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.night {
+  background-color: #000;
+  color: azure;
+}
+
+.img {
+  transition: border-color 0.4s, filter 0.4s;
+}
+
+body.night .img {
+  border-color: #eee5e5;
+  filter: brightness(70%);
+}
+
+body.night .night-btn {
+  background-color: #f4ee45;
+}
