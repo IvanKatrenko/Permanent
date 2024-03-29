@@ -1,4 +1,4 @@
-.night-btn {
+.night-theme-btn {
   position: fixed;
   top: 170px;
   right: 10px;
@@ -12,15 +12,15 @@
   transition: filter 0.4s background-color 0.4s;
 }
 
-.night-btn:hover {
+.night-theme-btn:hover {
   filter: brightness(120%);
 }
 
-.night-btn:active {
+.night-theme-btn:active {
   filter: brightness(60%);
 }
 
-.night-btn__icon {
+.night-theme-btn__icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,19 +28,26 @@
   height: 35px;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity 0.4s;
+  transition: opacity 0.15s;
 }
 
-.night-btn__icon-moon {
+.night-theme-btn__icon-moon {
   opacity: 1;
 }
 
-body {
+html {
   transition: background-color 0.4s, color 0.4s;
 }
 
-body.night {
-  background-color: #000;
+body.night-theme .header,
+body.night-theme .hero,
+body.night-theme .features,
+body.night-theme .product,
+body.night-theme .feedback,
+body.night-theme .footer,
+body.night-theme .maps {
+  transition: background-color 0.4s, color 0.4s;
+  background-color: #1c1c1c;
   color: azure;
 }
 
@@ -48,11 +55,51 @@ body.night {
   transition: border-color 0.4s, filter 0.4s;
 }
 
-body.night .img {
+a {
+  transition: color 0.4s;
+}
+
+body.night-theme a {
+  color: azure;
+}
+
+body.night-theme .swiper__title {
+  color: #e9e9e4;
+}
+
+body.night-theme .swiper__text {
+  color: #eee5e5;
+}
+
+body.night-theme .swiper-pagination-bullet {
+  background-color: #f4ee45;
+}
+
+h1 {
+  transition: color 0.4s;
+}
+
+body.night-theme h1 {
+  color: azure;
+}
+
+body.night-theme h1 {
+  color: #d9d9d7;
+}
+
+body.night-theme .img {
   border-color: #eee5e5;
   filter: brightness(70%);
 }
 
-body.night .night-btn {
+body.night-theme .night-theme-btn {
   background-color: #f4ee45;
+}
+
+body.night-theme .night-theme-btn__icon-moon {
+  opacity: 0;
+}
+
+body.night-theme .night-theme-btn__icon-sun {
+  opacity: 1;
 }

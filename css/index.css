@@ -16,6 +16,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -37,7 +38,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   font-size: 16px;
   color: #070707;
-  background-color: #f3f5f4;
+  background-color: #ccabdf;
   line-height: 1.5;
   padding-top: 70px;
 }
