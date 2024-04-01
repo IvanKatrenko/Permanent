@@ -1,3 +1,4 @@
 git add .gitignore
 git add node.modules
 git commit -m "message" .gitignore
+node_modules
