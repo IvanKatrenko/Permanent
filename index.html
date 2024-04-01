@@ -195,15 +195,16 @@
 
             <section class="training">
                 <div class="container training__container">
+                    
                     <div class="training__left">
-                        <img class="training__img" src="img/1.png" width="705" height="769" alt="">
+                        <img class="training__img" src="/img/img1.jpg" width="705" height="769" alt="">
                     </div>
         
                     <div class="training__right">
-                        <h1 class="training__title">Mikropigmentacja</h1>
+                        <h1 class="training__title">Szkolenia</h1>
                         <p class="training__text">Szkolenia z makijażu permanentnego są kursami, na których uczestnicy zdobywają umiejętności i wiedzę potrzebną do wykonywania trwałego makijażu, również znanego jako mikropigmentacja. Te szkolenia obejmują zarówno teoretyczne zagadnienia, takie jak anatomia skóry, techniki pigmentacji, higiena i bezpieczeństwo, jak i praktyczne zajęcia, podczas których uczestnicy uczą się wykonywać makijaż permanentny na różnych obszarach, takich jak brwi, usta czy linia rzęs. Po ukończeniu kursu uczestnicy mogą uzyskać certyfikat potwierdzający ich umiejętności, który pozwoli im na podjęcie pracy jako specjaliści od makijażu permanentnego.</p>
                         <a class="training__down" href="#one">
-                            <img class="training__down-img" src="img/1.png" alt="" width="113" height="139">
+                            <img class="training__down-img" src="img/lipstick.png" alt="" width="113" height="139">
                             <span>Zgłosić swój udział w szkoleniu.</span>
                         </a>
                     </div>
@@ -219,7 +220,7 @@
                                 class="contacts__img"
                                 alt="">
                         <h6 class="contacts__item-text">Bezbolesne i efektywne </h6>
-                        <p class="contacts__item-text"> Bardzo mi zalezy zeby zabieg byl bezbolesny i jak najbardziej efektywny.</p>
+                        <p class="contacts__item-description"> Bardzo mi zalezy zeby zabieg byl bezbolesny i jak najbardziej efektywny.</p>
                         </div>
                         <div class="contacts__lists">
                             <img loading="lazy"
@@ -227,7 +228,7 @@
                             class="contacts__img" 
                             alt="#">
                         <h6 class="contacts__item-text">Znizki oraz promocje</h6>
-                        <p class="contacts__item-text"> Uwzgledniamy znizki i promocje. Uwielbiamy rozdawac dla naszych klientów.</p>
+                        <p class="contacts__item-description"> Uwzgledniamy znizki i promocje. Uwielbiamy rozdawac dla naszych klientów.</p>
                         </div>
                         <div class="contacts__lists">
                             <img loading="lazy" 
@@ -235,7 +236,7 @@
                             class="contacts__img" 
                             alt="#">
                         <h6 class="contacts__item-text">Indywidulane podejscie</h6>
-                        <p class="contacts__item-text"> Zapewniamy indywidulanie podejscia wspolpracy ze mną.</p>
+                        <p class="contacts__item-description"> Zapewniamy indywidulanie podejscia wspolpracy ze mną.</p>
                         </div>
                     </ul>
                     <button class="contact__button">Darmowa konsultacja</button>
@@ -246,20 +247,20 @@
                 <div class="container voucher__container">
                     <div class="voucher__left">
                         <img class="voucher__img"
-                            src="img/1.png"
+                            src="img/voucher.png"
                             width="705"
                             height="769"
                             alt="">
                     </div>
         
                     <div class="voucher__right">
-                        <h1 class="voucher__title">Zrob prezent na makijaż</h1>
+                        <h1 class="voucher__title">Zrób prezent na makijaż</h1>
                         <p class="voucher__text">
                             Z przyjemnością oferujemy Ci ten voucher na zabieg makijażu permanentnego w naszym renomowanym salonie kosmetycznym. Uzyskaj trwały efekt pięknego makijażu, który będzie Cię zachwycał przez wiele miesięcy.
                         </p>
                         <a class="voucher__link" href="#">
                             <img class="voucher__link-img" 
-                                src="img/1.png" 
+                                src="img/voucher.png" 
                                 alt="#" 
                                 width="113" 
                                 height="139">
@@ -432,11 +433,28 @@
         </button>
 
     </footer>
+
+<!-- modal  -->
+ <div class="modal"> 
+        <!-- show вписываем сверху в modal когда хочем использовать toggle -->
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Jeśli masz jakiekolwiek pytania, skontaktujemy się z Tobą tak szybko, jak to możliwe !</div>
+                    <input required placeholder="Name" name="name" type="text" class="modal__input">
+                    <input required placeholder="Number" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Proszę o telefon</button>
+                </form>
+            </div>
+        </div>
+    </div>    
     <script src="js/burger.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/header.js" defer></script>
     <script src="js/night.js" defer></script>
+    <script src="js/modal.js" defer></script>
 
 </body>
 </html>

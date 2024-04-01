@@ -1,0 +1,74 @@
+.contact {
+  background-color: #c7a2dd;
+  padding: 40px 0;
+  color: black;
+}
+.contact__container {
+  max-width: 1240px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+.contact__list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+.contacts__lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.contacts__img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.contacts__item-text {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.72px;
+  margin-bottom: 10px;
+}
+
+.contacts__item-description {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+.contact__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: #ef1919;
+  font-size: 18px;
+  font-style: normal;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.contact__button:hover {
+  background-color: #f0a0a0;
+  border-color: black;
+  color: black;
+  transform: scale(1.1);
+}
+
+.contact__button:active {
+  background-color: #92e3f1;
+  border-color: black;
+  color: black;
+}
