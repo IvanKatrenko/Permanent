@@ -45,7 +45,10 @@ body.night-theme .features,
 body.night-theme .product,
 body.night-theme .feedback,
 body.night-theme .footer,
-body.night-theme .maps {
+body.night-theme .maps,
+body.night-theme .contact,
+body.night-theme .voucher,
+body.night-theme .training {
   transition: background-color 0.4s, color 0.4s;
   background-color: #1c1c1c;
   color: azure;
