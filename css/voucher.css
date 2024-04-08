@@ -73,6 +73,9 @@
   filter: brightness(100%);
   border-color: #f58585;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.29), 0 6px 6px rgba(0, 0, 0, 0.63);
+  background-size: 100% 100%;
+  background-image: linear-gradient(to right, #ff0000, #00ff00);
+  transform: scale(1) rotate(0deg);
 }
 
 .voucher__button:active {
