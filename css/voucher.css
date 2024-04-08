@@ -48,9 +48,13 @@
   font-weight: 700;
   letter-spacing: 0.04em;
 }
-.voucher__link-img {
+.voucher__button {
+  display: flex;
   margin-bottom: 10px;
-  width: 100%;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   object-fit: cover;
   border-radius: 15px;
   transition: filter 0.3s ease;
@@ -61,12 +65,19 @@
   border-color: #f58585;
 }
 
-.voucher__link-img:focus {
-  outline-color: #f58585;
-}
-
-.voucher__link-img:hover {
-  filter: drop-shadow(4px 7px 20px #ccabdf);
+.voucher__button:hover {
+  filter: drop-shadow(4px 7px 20px #f50909);
   transition: filter 0.3s ease;
   transform: translate(0, -5px);
+  transform: scale(1.2);
+  filter: brightness(100%);
+  border-color: #f58585;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.29), 0 6px 6px rgba(0, 0, 0, 0.63);
+}
+
+.voucher__button:active {
+  filter: drop-shadow(4px 7px 20px #f58585);
+  transition: filter 0.3s ease;
+  transform: translate(0, 5px);
+  transform: scale(1.2);
 }
