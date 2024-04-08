@@ -8,7 +8,8 @@
   background-size: cover;
   padding: 80px 0;
   margin-bottom: 100px;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 .training__container {
   display: flex;
@@ -20,6 +21,7 @@
 
 .training__left {
   max-width: 500px;
+  margin-left: 50px;
 }
 /* .training__img {
   display: block;
@@ -32,7 +34,8 @@
 .training__right {
   padding-top: 20px;
   padding-bottom: 20px;
-  max-width: 630px;
+  padding-right: 30px;
+  max-width: 500px;
 }
 .training__title {
   font-family: Arial;
@@ -49,9 +52,9 @@
 .training__text {
   font-size: 22px;
   line-height: 140%;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   margin-bottom: 24px;
-  margin-left: 20px;
+  width: 100%;
 }
 .training__down {
   display: flex;
@@ -60,14 +63,14 @@
   max-width: 113px;
   align-items: center;
   font-family: Arial;
-  font-size: 18px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.04em;
+  line-height: 130%;
 }
 .training__down-img {
   width: 200%;
-  wrap: wrap-reverse;
   object-fit: cover;
   border-radius: 15px;
   opacity: 2;
@@ -79,6 +82,7 @@
   margin-bottom: 13px;
   cursor: pointer;
   transform: translate(0, 0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .training__down-img:hover {
