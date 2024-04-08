@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-evenly;
   gap: 30px;
+  margin-top: 50px;
 }
 .voucher__left {
   max-width: 500px;

@@ -1,3 +1,5 @@
+/* css/contact.css */
+
 .container__contact {
   position: relative;
   display: flex;
@@ -130,4 +132,114 @@ i {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  padding: 1px;
+  text-decoration: none;
+  transition: all 0.18s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  margin-left: 15%;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 1px;
+  text-decoration: none;
+  transition: all 0.18s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 45%;
+}
+
+.button &:after,
+&:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: calc(100px + 1.5px);
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-image: conic-gradient(
+    from #773438 at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 33%,
+    var #f1535e 50%,
+    rgba(0, 0, 0, 0) 66%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: rotate 2s infinite linear;
+}
+
+&:before {
+  animation: rotate 2s infinite linear;
+  filter: blur(20px);
+}
+
+.contact__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 20px;
+  border-radius: 100px;
+  color: #f3eaea;
+  font-weight: 500;
+  font-size: 25px;
+  z-index: 1;
+  transition: all 0.18s ease;
+  background: rgba(#000, 0.3);
+  backdrop-filter: blur(40px);
+  backface-visibility: hidden;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+  animation: glow 1500ms infinite ease-in-out;
+}
+
+.contact__button:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff,
+    0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+}
+
+.contact__button:focus {
+  outline: 0;
+}
+@keyframes glow {
+  0% {
+    background: #b20000;
+    box-shadow: 0px 0px 3px #b20000;
+  }
+  50% {
+    background: #ff0000;
+    box-shadow: 0px 0px 40px #ff0000;
+  }
+  100% {
+    background: #b20000;
+    box-shadow: 0px 0px 3px #b20000;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__contact {
+    flex-direction: column;
+  }
 }

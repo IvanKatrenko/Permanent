@@ -4,26 +4,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: url(../img/szkolenia.jpeg);
+  background-size: cover;
+  padding: 80px 0;
+  margin-bottom: 100px;
+  height: 100vh;
 }
 .training__container {
   display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   justify-content: space-evenly;
   gap: 10px;
 }
 
 .training__left {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 630px;
+  max-width: 500px;
 }
-.training__img {
+/* .training__img {
   display: block;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
   opacity: 2;
   color: transparent;
-}
+} */
 .training__right {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -34,15 +39,19 @@
   font-size: 60px;
   font-style: italic;
   font-weight: 500;
+  align-items: center;
+  justify-content: center;
   line-height: 100%;
   letter-spacing: 0.01em;
   margin-bottom: 50px;
+  margin-left: 20px;
 }
 .training__text {
   font-size: 22px;
   line-height: 140%;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.2em;
   margin-bottom: 24px;
+  margin-left: 20px;
 }
 .training__down {
   display: flex;
@@ -57,12 +66,14 @@
   letter-spacing: 0.04em;
 }
 .training__down-img {
-  width: 100%;
+  width: 200%;
+  wrap: wrap-reverse;
   object-fit: cover;
   border-radius: 15px;
   opacity: 2;
   color: transparent;
   align-items: center;
+  margin-left: 40px;
   transition: filter 0.3s ease;
   filter: drop-shadow(4px 7px 20px transparent);
   margin-bottom: 13px;
@@ -76,3 +87,16 @@
   transform: translate(0, -5px);
 }
 
+.training__down-img:active {
+  filter: drop-shadow(4px 7px 20px #ccabdf);
+  transition: filter 0.3s ease;
+  transform: translate(0, 5px);
+}
+
+.training__down-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  opacity: 2;
+  color: transparent;
+}
