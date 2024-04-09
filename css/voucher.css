@@ -7,6 +7,8 @@
   justify-content: space-evenly;
   gap: 30px;
   margin-top: 50px;
+  border-top: 2px solid #f58585;
+  border-radius: 22px 22px;
 }
 .voucher__left {
   max-width: 500px;
@@ -29,6 +31,10 @@
   line-height: 100%;
   letter-spacing: 0.01em;
   margin-bottom: 50px;
+}
+
+.voucher__title:hover {
+  border-bottom: 3px solid #f58585;
 }
 .voucher__text {
   font-size: 26px;
@@ -83,4 +89,76 @@
   transition: filter 0.3s ease;
   transform: translate(0, 5px);
   transform: scale(1.2);
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1200px) {
+  .voucher__container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .voucher__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .voucher__left {
+    margin-left: 0;
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  .voucher__right {
+    max-width: 500px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .voucher__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    border-bottom: #f58585;
+  }
+  .voucher__text {
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+  }
+  .voucher__link {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 113px;
+    align-items: center;
+    font-family: Arial;
+    font-size: 28px;
+  }
+  .voucher__button {
+    display: flex;
+    margin-bottom: 10px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: filter 0.3s ease;
+    filter: drop-shadow(4px 7px 20px transparent);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 580px) {
 }

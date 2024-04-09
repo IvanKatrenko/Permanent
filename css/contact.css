@@ -143,10 +143,10 @@ i {
 }
 
 .button {
-  position: absolute;
+  position: relative;
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1px;
   text-decoration: none;
   transition: all 0.18s ease-in-out;
@@ -155,6 +155,7 @@ i {
   margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 45%;
+  margin-right: 45%;
 }
 
 .button &:after,
@@ -187,9 +188,8 @@ i {
 }
 
 .contact__button {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 15px 20px;
   border-radius: 100px;
@@ -242,4 +242,57 @@ i {
   .container__contact {
     flex-direction: column;
   }
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1000px) {
+  .container__contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .contact__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .contact__text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .button {
+    font-size: 20px;
+    box-sizing: content-box;
+    width: 100px;
+  }
+  .contact__button {
+    font-size: 20px;
+    box-sizing: content-box;
+    width: 100px;
+  }
+}
+
+@media (max-width: 760px) {
+  .card {
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 580px) {
 }
