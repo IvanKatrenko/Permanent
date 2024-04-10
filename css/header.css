@@ -115,7 +115,7 @@
   color: #e90ee9;
 }
 .header__consultation {
-  display: flex;
+  /* display: flex;
   font-family: cursive;
   align-items: center;
   justify-content: end;
@@ -128,6 +128,111 @@
   color: #fbfafa;
   font-size: 20px;
   cursor: pointer;
+  right: 300px; */
+  display: flex;
+  font-family: cursive;
+  align-items: flex-end;
+  justify-content: end;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header__consultation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__consultation-item:nth-child(1) {
+  background: #03a9f4;
+}
+
+.header__consultation-item:nth-child(2) {
+  background: #e5f226;
+}
+
+.header__consultation-item:nth-child(3) {
+  background: #f74b30;
+}
+
+.header__consultation-item:nth-child(4) {
+  background: #e764a1;
+}
+
+.header__consultation-item:nth-child(5) {
+  background: #f74b30;
+}
+
+.header__consultation-item:nth-child(6) {
+  background: #40f25b;
+}
+
+.header__consultation-item:nth-child(6) {
+  background: #f7ac21;
+}
+
+.header__consultation-item:nth-child(6) {
+  background: #602be7;
+}
+
+.header__consultation-item:nth-child(7) {
+  background: #15e37c;
+}
+
+.header__consultation-item:nth-child(8) {
+  background: #ec19b7;
+}
+
+.header__consultation-title {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.header__consultation-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0;
+}
+
+.header__consultation-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.header__consultation-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__consultation-button {
+  width: 70px;
+  height: 70px;
+  background: #e5f226;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__consultation-button svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1440px) {
