@@ -123,10 +123,10 @@
   flex-direction: column;
   gap: 5px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 5px 10px;
-  font-family: cursive;
   font-size: 20px;
+  font-weight: cursor;
 }
 
 .header__consultation:hover .header__consultation-button {
@@ -166,18 +166,19 @@
 
 @keyframes animation_button {
   0% {
-    box-shadow: 0 0 0 0 #f1535e, 0 0 0 0 rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 0 #f1535e, 0 0 0 0 rgba(255, 206, 9, 0.7);
   }
   40% {
-    box-shadow: 0 0 0 13.62px rgba(255, 196, 0, 0.7) 0, 0, 0,
-      6.81px rgba(216, 196, 131, 0.7);
+    box-shadow: 0 0 0 13.62667px rgba(255, 186, 38, 0) 0 0 0 6.81333px
+      rgba(255, 206, 131, 0.7);
   }
   80% {
-    box-shadow: 0 0 0 27.62px rgba(255, 196, 0, 0.7) 0, 0, 0;
+    box-shadow: 0 0 0 27.62px rgba(62, 240, 104, 0.7),
+      0 0 0 13.62667px rgba(255, 255, 255, 0.7);
   }
   100% {
-    box-shadow: 0 0 0 34.657 rgba(126, 226, 99, 0.7),
-      0 0 0 0 rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 34.06667px rgba(255, 186, 38, 0),
+      0 0 0 27.25333px rgba(255, 206, 9, 0);
   }
 }
 
