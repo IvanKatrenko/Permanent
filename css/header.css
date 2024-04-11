@@ -114,33 +114,73 @@
 .navigation__link:active {
   color: #e90ee9;
 }
+
 .header__consultation {
-  /* display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.header__consultation:hover .header__consultation-button {
+  width: auto;
+  height: auto;
+  visibility: hidden;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: 0.3s ease 0s;
+}
+
+.header__consultation-button {
+  display: flex;
   font-family: cursive;
   align-items: center;
   justify-content: end;
-  text-align: center;
+  flex-direction: column;
   gap: 5px;
   margin-right: 20px;
-  background-color: #f74b30;
-  border-radius: 40px;
+  margin-top: 20px;
   padding: 5px 10px;
   color: #fbfafa;
   font-size: 20px;
   cursor: pointer;
-  right: 300px; */
-  display: flex;
-  font-family: cursive;
-  align-items: flex-end;
-  justify-content: end;
-  flex-direction: column;
-  gap: 5px;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  transition: 0.2s ease;
+  color: #000;
+}
+
+.header__consultation-button:hover {
+  width: auto;
+  height: auto;
+}
+
+.header__consultation-button:hover .header__consultation-list {
+  position: relative;
+  top: auto;
+  bottom: 10px;
+  visibility: visible;
 }
 
 .header__consultation-list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: absolute;
+  right: 13px;
+  top: 70px;
+  transition: 0.3s;
+  visibility: hidden;
 }
 
 .header__consultation-item:nth-child(1) {
@@ -197,6 +237,16 @@
   align-items: center;
   justify-content: center;
   margin: 4px 0;
+  transform: scaleX(0.4) scaleY(0.4) translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header__consultation:hover .header__consultation-item {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s ease;
+  transform: scaleX(1) scaleY(1) translateY(150px);
 }
 
 .header__consultation-icon {
@@ -218,8 +268,6 @@
 }
 
 .header__consultation-button {
-  width: 70px;
-  height: 70px;
   background: #e5f226;
   border-radius: 50%;
   display: flex;
