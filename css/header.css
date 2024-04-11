@@ -148,7 +148,7 @@
   flex-direction: column;
   gap: 5px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 5px 10px;
   color: #fbfafa;
   font-size: 20px;
@@ -158,6 +158,27 @@
   overflow: hidden;
   transition: 0.2s ease;
   color: #000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-out;
+  animation: animation_button 1.5s linear infinite;
+}
+
+@keyframes animation_button {
+  0% {
+    box-shadow: 0 0 0 0 #f1535e, 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 13.62px rgba(255, 196, 0, 0.7) 0, 0, 0,
+      6.81px rgba(216, 196, 131, 0.7);
+  }
+  80% {
+    box-shadow: 0 0 0 27.62px rgba(255, 196, 0, 0.7) 0, 0, 0;
+  }
+  100% {
+    box-shadow: 0 0 0 34.657 rgba(126, 226, 99, 0.7),
+      0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
 }
 
 .header__consultation-button:hover {
@@ -180,47 +201,10 @@
   right: 13px;
   top: 70px;
   transition: 0.3s;
-  visibility: hidden;
-}
-
-.header__consultation-item:nth-child(1) {
-  background: #03a9f4;
-}
-
-.header__consultation-item:nth-child(2) {
-  background: #e5f226;
-}
-
-.header__consultation-item:nth-child(3) {
-  background: #f74b30;
-}
-
-.header__consultation-item:nth-child(4) {
-  background: #e764a1;
-}
-
-.header__consultation-item:nth-child(5) {
-  background: #f74b30;
-}
-
-.header__consultation-item:nth-child(6) {
-  background: #40f25b;
-}
-
-.header__consultation-item:nth-child(6) {
-  background: #f7ac21;
-}
-
-.header__consultation-item:nth-child(6) {
-  background: #602be7;
-}
-
-.header__consultation-item:nth-child(7) {
-  background: #15e37c;
-}
-
-.header__consultation-item:nth-child(8) {
-  background: #ec19b7;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
 }
 
 .header__consultation-title {
@@ -240,6 +224,8 @@
   transform: scaleX(0.4) scaleY(0.4) translateY(100px);
   opacity: 0;
   visibility: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .header__consultation:hover .header__consultation-item {
@@ -260,22 +246,32 @@
 }
 
 .header__consultation-icon svg {
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   fill: #fff;
   align-items: center;
   justify-content: center;
 }
 
 .header__consultation-button {
-  background: #e5f226;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
 }
 
-.header__consultation-button svg {
+.header__consultation-button:hover {
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: 0.3s ease 0s;
+}
+
+.header__consultation-button .header__consultation-button svg {
   width: 40px;
   height: 40px;
   fill: #fff;
