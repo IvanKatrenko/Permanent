@@ -144,10 +144,10 @@
   display: flex;
   font-family: cursive;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   flex-direction: column;
   gap: 5px;
-  margin-right: 20px;
+  margin-right: 0;
   margin-top: 10px;
   padding: 5px 10px;
   color: #fbfafa;
@@ -166,10 +166,10 @@
 
 @keyframes animation_button {
   0% {
-    box-shadow: 0 0 0 0 #f1535e, 0 0 0 0 rgba(255, 206, 9, 0.7);
+    box-shadow: 0 0 0 0 #a5f494, 0 0 0 0 rgba(121, 243, 168, 0.7);
   }
   40% {
-    box-shadow: 0 0 0 13.62667px rgba(255, 186, 38, 0) 0 0 0 6.81333px
+    box-shadow: 0 0 0 13.62667px rgba(236, 233, 227, 0) 0 0 0 6.81333px
       rgba(255, 206, 131, 0.7);
   }
   80% {
@@ -177,7 +177,7 @@
       0 0 0 13.62667px rgba(255, 255, 255, 0.7);
   }
   100% {
-    box-shadow: 0 0 0 34.06667px rgba(255, 186, 38, 0),
+    box-shadow: 0 0 0 34.06667px rgba(9, 234, 50, 0),
       0 0 0 27.25333px rgba(255, 206, 9, 0);
   }
 }
