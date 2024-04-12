@@ -72,9 +72,19 @@
 .logo__img {
   width: 200px;
   opacity: 100;
+  transition: 0.3s ease 0s;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 5px;
+  margin-left: 5px;
 }
 .logo__img:hover {
   opacity: 0.8;
+  border: 1px solid #ccabdf;
+  transition: 0.3s ease 0s;
 }
 .logo__img:active {
   opacity: 0.6;
@@ -109,7 +119,12 @@
   font-size: 18px;
 }
 .navigation__link:hover {
-  color: #1d1c1d;
+  color: #e90ee9;
+  transition: 0.3s ease 0s;
+  font-weight: 500;
+  border-bottom: 1px solid #e90ee9;
+  padding: 0.5px 0;
+  cursor: pointer;
 }
 .navigation__link:active {
   color: #e90ee9;
@@ -199,13 +214,18 @@
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  right: 13px;
-  top: 70px;
+  right: 10px;
+  top: 90px;
   transition: 0.3s;
   list-style: none;
-  padding: 0;
-  margin: 0;
   font-size: 18px;
+  gap: 5px;
+}
+
+.header__consultation-item:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.4s ease-in-out;
 }
 
 .header__consultation-title {
