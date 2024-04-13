@@ -29,6 +29,14 @@
   margin-bottom: 30px;
   text-align: center;
 }
+
+.product__title:hover {
+  color: #e90ee9;
+  border-bottom: 2px solid #ccabdf;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .product__features {
   font-size: 18px;
   font-weight: 400;
@@ -46,6 +54,12 @@
   margin-bottom: 70px;
   text-align: center;
 }
+
+.product__description:hover {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
 .product__button-wrapper {
   display: flex;
   flex-direction: row;
@@ -53,6 +67,7 @@
   justify-content: center;
   gap: 70px;
 }
+
 .product__button {
   display: block;
   padding: 14px 36px;
@@ -154,13 +169,26 @@
   bottom: 0px;
   transition-delay: 0s;
 }
-.container__image .card .content .contentBx h3 {
+
+.container__image .card .content .contentBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.container__image .card .content .contentBx .image__title {
   color: #0c0b0b;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
   font-size: 18px;
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  justify-content: center;
   margin: 20px 0 15px;
   line-height: 1.1em;
   transition: 0.5s;
@@ -168,12 +196,12 @@
   opacity: 0;
   transition-delay: 0.6s;
 }
-.container__image.card:hover .content .contentBx h3 {
+.container__image.card:hover .content .contentBx {
   transform: translateY(0px);
   opacity: 1;
   color: #000;
 }
-.container__image .card .content .contentBx h3 span {
+.container__image .card .content .contentBx .image__title .image__subtitle {
   font-size: 12px;
   font-weight: 300;
   text-transform: initial;
@@ -183,7 +211,7 @@
   bottom: 10px;
   display: flex;
 }
-.container__image .card .sci li {
+.container__image .card .sci .sci__item {
   list-style: none;
   margin: 0 10px;
   transform: translateY(40px);
@@ -191,11 +219,11 @@
   opacity: 0;
   transition-delay: calc(0.2s * var(--i));
 }
-.container__image .card:hover .sci li {
+.container__image .card:hover .sci .sci__item {
   transform: translateY(0px);
   opacity: 1;
 }
-.container__image .card .sci li a {
+.container__image .card .sci .sci__item {
   color: #121111;
   font-size: 24px;
 }
@@ -205,12 +233,31 @@
   font-weight: 700;
   line-height: 110%;
   letter-spacing: 0.7px;
-  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #000;
   font-size: 60px;
+}
+
+.sci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sci__link {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  cursor: pointer;
+}
+
+.sci__link:hover {
+  color: #ccabdf;
 }
 
 @media (max-width: 1440px) {
