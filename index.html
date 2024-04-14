@@ -226,7 +226,7 @@
                             </div>
                             <div class="features__lists">
                                 <img l
-                                oading="lazy" 
+                                loading="lazy" 
                                 src="img/cloudy.png" 
                                 class="features__img" 
                                 alt="">
@@ -239,12 +239,18 @@
             <section class="product" id="two">
                 <div class="container product__container">
                     <div class="product__content">
-                        <h2 class="product__title">
-                            Makijaż permanentny ust
-                        </h2>
-                        <p class="product__features">
-                            Twoje usta będą prezentować się perfekcyjnie, bez względu na sytuację.
-                        </p>
+                            <h2 class="product__title">
+                                Makijaż permanentny ust
+                            </h2>
+
+                        <div id="product__slider">
+                            <p class="product__features">
+                                Twoje usta będą prezentować się 
+                            </p>
+                            <div class="span" id="sliderValue">
+                            </div>
+                        </div>
+
                         <p class="product__description">
                             Przenikniesz do świata soczystej czerwieni, która nie tylko odmłodzi Twoją twarz, ale również doda jej energii. Nadchodzi czas, abyś zapomniała o codziennym malowaniu ust i cieszyła się naturalnym, świeżym wyglądem w każdym momencie dnia. Abyś mogła zobaczyć własne możliwości, serdecznie zapraszam Cię na wizualizację, gdzie przekonasz się, jak pięknie mogą prezentować się Twoje usta!
                         </p>
@@ -272,12 +278,13 @@
                                                     <img loading="lazy" class="sci__image" src="img/facebookprod.png" alt="#">  
                                           </a>
                                         </li>
-                                        <li style=""><a href="#">
+                                        <li style="">
+                                            <a class="sci__link" href="#">
                                                 <img loading="lazy" class="sci__image" src="img/instagrammproduct.png" alt="#">
                                           </a>
                                         </li>
                                         <li style="">
-                                            <a class="sci__link" >
+                                            <a class="sci__link" href="#">
                                                     <img class="sci__image" src="img/googleprod.png" alt="#">
                                           </a>
                                         </li>
@@ -743,12 +750,14 @@
             </div>
         </div>
     </div>    
+
     <script src="js/burger.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/header.js" defer></script>
     <script src="js/night.js" defer></script>
     <script src="js/modal.js" defer></script>
+    <script src="js/producttext.js" defer></script>
 
 </body>
 </html>

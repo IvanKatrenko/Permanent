@@ -43,7 +43,7 @@
   line-height: 130%;
   font-style: italic;
   letter-spacing: 0.72px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .product__description {
@@ -268,6 +268,60 @@
 
 .sci__link:hover {
   color: #ccabdf;
+}
+
+#product__slider {
+  display: block;
+  gap: 15px;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+#sliderValue {
+  display: flex;
+  color: #ec8be1;
+  font-weight: 700;
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.start {
+  opacity: 0;
+}
+
+.animation {
+  animation: fade 0.3s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.holder-animation {
+  animation: holder 4s;
+}
+
+@keyframes holder {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1440px) {
