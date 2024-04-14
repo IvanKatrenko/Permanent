@@ -280,6 +280,9 @@
 #sliderValue {
   display: flex;
   color: #ec8be1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px;
+  border-radius: 10px;
+  border: 1px solid #ec8be1;
   font-weight: 700;
   font-size: 28px;
   align-items: center;
