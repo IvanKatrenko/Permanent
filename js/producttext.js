@@ -1,14 +1,23 @@
 var sliderCounter = 0;
 var sliderContent = [
-    'perfekcyjnie, bezpiecznie',
+    'perfekcyjnie,bezpiecznie',
     'znakomicie, bozienie',
     'doskonale, najlepiej',
     'zachwycająco',
     'zawsze olśniewo'
 ]
 
+// var sliderContentSecond = [
+//     'z makijazu permannetnego ust',
+//     'z makijazu permannetnego brwi',
+//     'grupowe',
+//     'indywidualne',
+//     'kompleksowe'
+// ]
+
 var slider = document.getElementById('product__slider');
 var sliderValue = document.getElementById('sliderValue');
+// var sliderValueSecond = document.getElementById('sliderValueSecond');
 
 function slide() {
     if (sliderCounter >= sliderContent.length) {
