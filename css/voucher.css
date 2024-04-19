@@ -11,12 +11,21 @@
   border-radius: 22px 22px;
 }
 .voucher__left {
+  padding-top: 20px;
   max-width: 500px;
 }
 .voucher__img {
+  display: flex;
+  margin-top: 40px;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.29), 0 6px 6px rgba(0, 0, 0, 0.63);
+  transition: filter 0.3s ease;
+}
+.voucher__img:hover {
+  filter: drop-shadow(0 0 0.75rem #f58585);
+  scale: 1.1;
 }
 .voucher__right {
   padding-top: 20px;
