@@ -24,6 +24,17 @@
   padding: 30px 0;
 }
 
+.maps__title:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+  color: black;
+  font-weight: 500;
+  box-shadow: #ccabdf 0 0 10px;
+  border-radius: 10px;
+  border-color: black;
+  font-size: 50px;
+}
+
 .maps__map {
   width: 100%;
 }

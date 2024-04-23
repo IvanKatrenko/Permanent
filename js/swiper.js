@@ -1,4 +1,4 @@
-let swiper = new Swiper(".myswiper", {
+let swiper = new swiper(".myswiper", {
     cssMode: true,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -18,7 +18,12 @@ let swiper = new Swiper(".myswiper", {
         pauseOnFocus: false,
         pauseOnHover: false,
         waitForTransition: false,
-
+        noSwiping: false,
+        loadings: false,
+        runCallbacksOnInit: true,
+        onTransitionStart: function () {
+        },
+        onTransitionEnd: function () { },
     },
 });
 

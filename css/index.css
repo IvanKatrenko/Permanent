@@ -92,10 +92,13 @@ iframe {
 
 /* бегущая строка */
 .marque-text {
-  margin: 30px auto;
+  margin: 40px auto;
   border: 1px solid #000;
   max-width: 100%;
   overflow: hidden;
+  white-space: nowrap;
+  background-color: #ccabdf;
+  padding: 10px 30px;
 }
 .marque-text div {
   display: flex;
