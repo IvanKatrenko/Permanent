@@ -28,6 +28,7 @@
   letter-spacing: 0.7px;
   margin-bottom: 30px;
   text-align: center;
+  transition: 0.5s;
 }
 
 .product__title:hover {
@@ -82,8 +83,10 @@
   line-height: 130%;
   letter-spacing: 0.72px;
   border-radius: 10px;
-  background-color: #53f0c1;
+  background-color: #e891df;
   color: rgb(7, 7, 7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.5s;
 }
 .product__button-more {
   font-size: 18px;
@@ -93,6 +96,8 @@
   letter-spacing: 0.72px;
   border: 2px solid #070707;
   border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.5s;
 }
 .product__button:hover {
   background-color: #f0a0a0;
