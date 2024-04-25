@@ -21,6 +21,15 @@ body {
   padding-left: 20px;
   font-size: 30px;
 }
+
+.title__pricelist:hover {
+  color: #ccabdf;
+  transition: 0.3s ease 0s;
+  cursor: pointer;
+  background-color: #a2a0a0;
+  border-radius: 10px;
+}
+
 .description__pricelist {
   display: flex;
   align-items: center;
@@ -32,6 +41,15 @@ body {
   padding-left: 20px;
   font-size: 30px;
 }
+
+.description__pricelist:hover {
+  color: #ccabdf;
+  transition: 0.3s ease 0s;
+  cursor: pointer;
+  background-color: #a2a0a0;
+  border-radius: 10px;
+}
+
 .logo__pricelist {
   display: flex;
   align-items: center;
@@ -54,6 +72,14 @@ table {
   width: 100%;
 }
 
+.th__pricelist {
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+  background-color: #b0aeae;
+  border: none;
+}
+
 th,
 td {
   border: 1px solid #dddddd;
@@ -74,9 +100,9 @@ tr:nth-child(even) {
 }
 
 .footer {
-  background-color: #fdfcfd;
+  background-color: #9a979a;
   color: #070707;
-  padding: 30px 0 100px;
+  padding: 30px 0;
   font-size: 18px;
 }
 .footer__container {
@@ -99,8 +125,9 @@ tr:nth-child(even) {
   flex-direction: column;
   gap: 10px;
 }
-.footer__link {
+.footer__phone {
   text-decoration: none;
   color: #070707;
   transition: color 0.3s ease-in-out;
+  cursor: pointer;
 }
