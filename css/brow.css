@@ -2,9 +2,11 @@ body {
   font-family: "Montserrat", sans-serif; /* Ustawienie czcionki */
   background-color: #f6f6f6; /* Kolor tła */
   color: #333; /* Kolor tekstu */
-  margin: 0; /* Usunięcie marginesów */
-  padding: 0; /* Usunięcie wewnętrznego marginesu */
+  margin: 0 20px; /* Usunięcie marginesów */
+  padding: 0 50px; /* Usunięcie wewnętrznego marginesu */
   line-height: 1.6; /* Wysokość linii */
+  font-size: 16px; /* Rozmiar czcionki */
+  overflow-x: hidden; /* Usunięcie przecieżności */
 }
 
 /* Stylowanie hiperłączy */
@@ -70,4 +72,205 @@ footer {
   color: #fff; /* Kolor tekstu w stopce */
   padding: 20px; /* Wewnętrzny margines stopki */
   text-align: center; /* Wyrównanie tekstu do środka */
+}
+
+.carousel__container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.lips__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.lips__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+}
+.lips__title {
+  font-style: italic;
+  font-size: 28px;
+}
+.lips__description {
+}
+.lips__methods {
+}
+.lips__wrapper-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.questions {
+  background-color: #ccabdf;
+  padding: 80px 0;
+  margin-bottom: 100px;
+  height: 100%;
+  width: 100%;
+}
+.question__title {
+  color: #0f0e0e;
+  font-size: 45px;
+  font-style: oblique;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.96px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccabdf;
+}
+
+.btn__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn__home:hover {
+  background-color: #ccabdf;
+}
+
+.footer {
+  height: 100%;
+  width: 100%;
+}
+.footer__container {
+  display: flex;
+  flex-direction: inherit;
+  justify-content: space-evenly;
+  gap: 38px 30px;
+  border-radius: 10px;
+}
+.footer__title {
+  font-size: 24px;
+  font-style: oblique;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.96px;
+  align-items: center;
+}
+.footer__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
