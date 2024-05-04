@@ -1,0 +1,39 @@
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  animation: carousel-animation 5s infinite; /* 5s - czas trwania animacji */
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes carousel-animation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
