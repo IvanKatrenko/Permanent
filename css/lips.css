@@ -1,0 +1,102 @@
+body {
+  font-family: "Roboto", sans-serif; /* Ustawienie czcionki */
+  background-color: #f9f9f9; /* Jasny kolor tła */
+  color: #333; /* Kolor tekstu */
+  margin: 0; /* Usunięcie marginesów */
+  padding: 0; /* Usunięcie wewnętrznego marginesu */
+  line-height: 1.6; /* Wysokość linii */
+}
+
+/* Stylowanie hiperłączy */
+a {
+  color: #4caf50; /* Zielony kolor hiperłączy */
+  text-decoration: none; /* Usunięcie domyślnego podkreślenia */
+  transition: color 0.3s; /* Płynne przejście koloru */
+}
+
+a:hover {
+  color: #009688; /* Kolor hiperłączy po najechaniu myszką */
+}
+
+/* Stylowanie nagłówków */
+h1,
+h2,
+h3 {
+  font-weight: bold; /* Pogrubienie nagłówków */
+  margin-bottom: 15px; /* Margines na dole */
+}
+
+h1 {
+  font-size: 2.5rem; /* Duży rozmiar czcionki dla nagłówka pierwszego poziomu */
+}
+
+h2 {
+  font-size: 2rem; /* Duży rozmiar czcionki dla nagłówka drugiego poziomu */
+}
+
+h3 {
+  font-size: 1.8rem; /* Średni rozmiar czcionki dla nagłówka trzeciego poziomu */
+}
+
+/* Stylowanie paragrafów */
+p {
+  margin-bottom: 20px; /* Margines na dole */
+  font-size: 1.1rem; /* Rozmiar czcionki paragrafu */
+}
+
+/* Stylowanie list */
+ul,
+ol {
+  margin-bottom: 20px; /* Margines na dole */
+}
+
+/* Stylowanie elementów listy */
+li {
+  margin-bottom: 5px; /* Margines na dole */
+}
+
+/* Stylowanie sekcji */
+section {
+  margin-bottom: 30px; /* Margines na dole */
+}
+
+/* Stylowanie stopki */
+footer {
+  background-color: #333; /* Ciemny kolor tła stopki */
+  color: #fff; /* Kolor tekstu w stopce */
+  padding: 20px; /* Wewnętrzny margines stopki */
+  text-align: center; /* Wyrównanie tekstu do środka */
+}
+
+.lips__container {
+}
+.lips__wrapper {
+}
+.lips__title {
+}
+.lips__description {
+}
+.lips__methods {
+}
+.lips__wrapper-second {
+}
+.slider-container {
+}
+.carousel {
+}
+.slides {
+}
+.slide {
+}
+.prev {
+}
+.next {
+}
+.questions {
+}
+.question__title {
+}
+.btn {
+}
+.btn__home {
+}
