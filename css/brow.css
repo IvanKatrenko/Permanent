@@ -1,69 +1,10 @@
-body {
-  font-family: "Montserrat", sans-serif; /* Ustawienie czcionki */
-  background-color: #f6f6f6; /* Kolor tła */
-  color: #333; /* Kolor tekstu */
-  margin: 0 20px; /* Usunięcie marginesów */
-  padding: 0 50px; /* Usunięcie wewnętrznego marginesu */
-  line-height: 1.6; /* Wysokość linii */
-  font-size: 16px; /* Rozmiar czcionki */
-  overflow-x: hidden; /* Usunięcie przecieżności */
-}
-
-/* Stylowanie hiperłączy */
-a {
-  color: #007bff; /* Kolor hiperłączy */
-  text-decoration: none; /* Usunięcie domyślnego podkreślenia */
-  transition: color 0.3s; /* Płynne przejście koloru */
-}
-
-a:hover {
-  color: #0056b3; /* Kolor hiperłączy po najechaniu myszką */
-}
-
-/* Stylowanie nagłówków */
-h1,
-h2,
-h3 {
-  font-weight: bold; /* Pogrubienie nagłówków */
-  margin-bottom: 15px; /* Margines na dole */
-}
-
-h1 {
-  font-size: 2.8rem; /* Duży rozmiar czcionki dla nagłówka pierwszego poziomu */
-}
-
-h2 {
-  font-size: 2.2rem; /* Duży rozmiar czcionki dla nagłówka drugiego poziomu */
-}
-
-h3 {
-  font-size: 1.8rem; /* Średni rozmiar czcionki dla nagłówka trzeciego poziomu */
-}
-
-/* Stylowanie paragrafów */
-p {
-  margin-bottom: 20px; /* Margines na dole */
-  font-size: 1.2rem; /* Rozmiar czcionki paragrafu */
-}
-
-/* Stylowanie list */
-ul,
-ol {
-  margin-bottom: 20px; /* Margines na dole */
-}
-
-/* Stylowanie elementów listy */
-li {
-  margin-bottom: 5px; /* Margines na dole */
-}
-
-/* Stylowanie sekcji */
-section {
-  margin-bottom: 30px; /* Margines na dole */
-  padding: 20px; /* Wewnętrzny margines */
-  background-color: #fff; /* Kolor tła sekcji */
-  border-radius: 8px; /* Zaokrąglenie rogów */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Cień */
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Stylowanie stopki */
@@ -79,7 +20,7 @@ footer {
   width: 100%;
   overflow: hidden;
 }
-
+/*
 .carousel {
   display: flex;
 }
@@ -146,6 +87,117 @@ footer {
 
 .next-button {
   right: 10px;
+} */
+
+#carousel {
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel img:hover {
+  cursor: pointer;
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
+.faq-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-answer {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .lips__container {
