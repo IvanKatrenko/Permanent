@@ -1,0 +1,179 @@
+body {
+  font-family: "Roboto", Arial, sans-serif; /* Wybór czcionki */
+  background-color: #f8f9fa; /* Kolor tła */
+  color: #333; /* Kolor tekstu */
+  margin: 0; /* Usunięcie marginesów */
+  padding: 0; /* Usunięcie paddingu */
+  line-height: 1.6; /* Wysokość wiersza */
+}
+
+/* Nagłówki */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", Arial, sans-serif; /* Inna czcionka dla nagłówków */
+  font-weight: bold; /* Pogrubienie */
+  color: #444; /* Kolor tekstu */
+  margin-top: 0.5em; /* Odstęp od góry */
+  margin-bottom: 0.75em; /* Odstęp od dołu */
+}
+
+/* Stylowanie paragrafów */
+p {
+  margin-bottom: 1.25rem; /* Odstęp między paragrafami */
+}
+
+/* Stylowanie list */
+ul,
+ol {
+  margin-bottom: 1.25rem; /* Odstęp między listami */
+}
+
+/* Stylowanie elementów formularza */
+input,
+textarea,
+select,
+button {
+  font-family: "Roboto", Arial, sans-serif; /* Inna czcionka dla elementów formularza */
+  font-size: 16px; /* Rozmiar czcionki */
+  padding: 0.5em; /* Wielkość paddingu */
+  border: 1px solid #ccc; /* Grubość i styl obramowania */
+  border-radius: 4px; /* Zakrąglenie rogów */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff; /* Kolor obramowania po otrzymaniu focusa */
+}
+
+/* Stylowanie przycisków */
+button {
+  padding: 0.75em 1.5em; /* Wielkość paddingu */
+  color: #fff; /* Kolor tekstu */
+  border: none; /* Usunięcie obramowania */
+  border-radius: 4px; /* Zakrąglenie rogów */
+  cursor: pointer; /* Zmiana kursora na wskaźnik */
+  transition: background-color 0.3s ease; /* Płynna zmiana koloru tła */
+}
+
+button:hover {
+  background-color: #0056b3; /* Kolor tła przycisku po najechaniu myszką */
+}
+
+.header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.logo__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.logo__img {
+  width: 200px;
+  opacity: 100;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.remover__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  color: #333;
+}
+.remover__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+.remover__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: red;
+}
+.remover__description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-style: italic;
+}
+.remover__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: red;
+}
+.remover__text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+.carousel {
+}
+.slide {
+}
+.prev-button {
+}
+.next-button {
+}
+.questions {
+}
+.question__title {
+}
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+.btn__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin-top: 20px;
+}
+.footer {
+}
+.footer__container {
+}
+.footer__title {
+}
+.footer__phone {
+}
